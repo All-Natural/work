@@ -9,7 +9,7 @@ public class log extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.first_layout);
+        setContentView(R.layout.first);
         Button button_1=(Button)findViewById(R.id.button_1);
         button_1.setOnClickListener(new View.OnClickListener() {
             @Override

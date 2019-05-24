@@ -1,36 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/return_1"
+        android:src="@drawable/返回"
+        android:layout_alignParentLeft="true"
+        android:background="#5dabfc"
+        android:layout_width="20dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/sure"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="#5dabfc"
+        android:src="@drawable/确认" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_width="371dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="#5dabfc"
+        android:gravity="center"
         android:text="编辑备忘"
         android:textColor="#ffffff"
-        android:background="#5dabfc"
-        android:gravity="center"/>
+        android:textSize="20dp" />
+    <ImageView
+        android:id="@+id/headline"
+        android:src="@drawable/标题"
+        android:layout_below="@id/return_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="20dp"
+        android:layout_height="50dp" />
+
     <EditText
-        android:text="标题"
-        android:hint="请输入标题"
+        android:id="@+id/edit"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="58dp"
+        android:layout_below="@+id/text"
+        android:plaintext="请输入标题"
+        android:text="标题" />
+    <ImageView
+        android:id="@+id/content_"
+        android:src="@drawable/内容"
+        android:layout_below="@+id/headline"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="20dp"
+        android:layout_height="50dp" />
+
     <EditText
-        android:text="内容"
+        android:id="@+id/text2"
+        android:textAlignment=""
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_below="@+id/edit"
         android:hint="请编辑内容"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="内容" />
+
+    <ImageView
+        android:id="@+id/week"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/content_"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="111dp"
+        android:src="@drawable/周数" />
+
     <EditText
-        android:text="周数"
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
         android:hint="选择周数"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:text="周数" />
+    <ImageView
+        android:id="@+id/time"
+        android:src="@drawable/时间"
+        android:layout_below="@+id/week"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="20dp"
+        android:layout_height="40dp" />
     <EditText
+        android:id="@+id/text4"
+        android:layout_below="@+id/text3"
+        android:layout_marginLeft="30dp"
         android:text="时间"
         android:hint="选择时间"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/remind"
+        android:layout_below="@+id/time"
+        android:src="@drawable/提醒"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="20dp"
+        android:layout_height="50dp" />
     <EditText
+        android:id="@+id/text5"
+        android:layout_below="@+id/text4"
+        android:layout_marginLeft="30dp"
         android:text="提醒"
         android:hint="不提醒"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 </RelativeLayout>
