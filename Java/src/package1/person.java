@@ -6,19 +6,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class person {
-    public person(String x,char g){
+    public void setperson(String name, char gender) {
+        this.gender = gender;
+        this.name = name;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public void getperson(){
+        this.getName();
+        this.getGender();
+    }
+    /**   public person(String x,char g){
         name=x;
         gender=g;
-    }
-    public void show(){
+    }**/
+
+    /**public void show(){
         System.out.println("name:"+name+'\n'+
                 "gender:"+gender);
-    }
+    }**/
     private String name;
     private char gender;
     public static void main(String[] args) {
         List<student> all=new ArrayList<student>();
-        student a=new student(2018213879,13061802,2018,"董一英",'f',"软件工程","重庆邮电大学","陈阔",'m');
+        student a=new student();
     a.show();
     }
 }

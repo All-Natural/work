@@ -1,3 +1,0 @@
-<resources>
-    <string name="app_name">My Application</string>//在代码中可通过R.string.app_name获得程序名称的引用，在xma中可通过@string/app_name获得程序名称
-</resources>
